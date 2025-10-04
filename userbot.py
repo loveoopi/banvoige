@@ -7,7 +7,7 @@ API_HASH = 'a980ba25306901d5c9b899414d6a9ab7'
 SESSION = '1BVtsOJwBu3l4UDFyABwF7glfM2kGOoY_Yesl-WX0NMpEM88V6YS9HKAzZLlXgYGZuNDNflzGP4RdVI0jgu3KSfILQ_N8eEoGuSp9Z4SoceoxngwA3JlSdjlE8b-eFPQ0RutlVSC488zdK6ck_HaN8OEc-AmNjT5yGslk6t5MPWc7C0gO_vwHQSDV6bkprNkrRRHCP58NMM-urh-WOSF7vgUbKGhenNCVj9SBiV3VmeBftHjEU0FyGPL-Z1caNTP5sMnZQkM9FqvyVrk6gJU4k6MVkkW5TFcXnmkkaydzXUe7jtRv4s_AH7OEVzrN4ybqYrHiXDj9J8qbEnXI_Km3rMkfQrVd7ig='  # File or string session name
 GROUP_ID = -1001887313554  # Replace with your group/channel ID
 
-client = TelegramClient(SESSION, API_ID, API_HASH)
+client = TelegramClient(StringSession(SESSION), API_ID, API_HASH)
 
 async def ban_channels_in_voicechat():
     while True:
