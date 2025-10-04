@@ -1,5 +1,6 @@
 import asyncio
 from telethon import TelegramClient, events, functions, types
+from telethon.sessions import StringSession  # Import StringSession
 
 # Replace with your own values
 API_ID = '20284828'
@@ -16,7 +17,7 @@ async def ban_channels_in_voicechat():
             result = await client(functions.phone.GetGroupCallParticipantsRequest(
                 call=types.InputGroupCall(
                     id=20284828,  # Use actual voice chat id, fetchable via Telethon
-                    access_hash=a980ba25306901d5c9b899414d6a9ab7,
+                    access_hash=123456789  # Replace with actual access hash
                 ),
                 limit=100
             ))
