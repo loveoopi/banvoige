@@ -3,10 +3,10 @@ from telethon import TelegramClient, events, functions, types
 from telethon.sessions import StringSession
 
 # Replace with your own values
-API_ID = '20228'
-API_HASH = 'a980ba25306909ba9ab7'
-SESSION = '1BVtsOJwBu3l4UDFyABwFl-WX0NMpEM88V6YS9HKAzZLlXgYGZuNDNflzGP4RdVI0jgu3KSfILQ_N8eEoGuSp9Z4SoceoxngwA3JlSdjlE8b-eFPQ0RutlVSC488zdK6ck_HaN8OEc-AmNjT5yGslk6t5MPWc7C0gO_vwHQSDV6bkprNkrRRHCP58NMM-urh-WOSF7vgUbKGhenNCVj9SBiV3VmeBftHjEU0FyGPL-Z1caNTP5sMnZQkM9FqvyVrk6gJU4k6MVkkW5TFcXnmkkaydzXUe7jtRv4s_AH7OEVzrN4ybqYrHiXDj9J8qbEnXI_Km3rMkfQrVd7ig='
-GROUP_ID = -1001887554
+API_ID = '20284828'
+API_HASH = 'a980ba25306901d5c9b899414d6a9ab7'
+SESSION = '1BVtsOJwBu3l4UDFyABwF7glfM2kGOoY_Yesl-WX0NMpEM88V6YS9HKAzZLlXgYGZuNDNflzGP4RdVI0jgu3KSfILQ_N8eEoGuSp9Z4SoceoxngwA3JlSdjlE8b-eFPQ0RutlVSC488zdK6ck_HaN8OEc-AmNjT5yGslk6t5MPWc7C0gO_vwHQSDV6bkprNkrRRHCP58NMM-urh-WOSF7vgUbKGhenNCVj9SBiV3VmeBftHjEU0FyGPL-Z1caNTP5sMnZQkM9FqvyVrk6gJU4k6MVkkW5TFcXnmkkaydzXUe7jtRv4s_AH7OEVzrN4ybqYrHiXDj9J8qbEnXI_Km3rMkfQrVd7ig='
+GROUP_ID = -1001887313554
 
 client = TelegramClient(StringSession(SESSION), API_ID, API_HASH)
 
