@@ -32,7 +32,7 @@ async def ban_channels_in_voicechat():
                 await asyncio.sleep(10)
                 continue
 
-            # Get participants - using the correct method name
+            # Get participants
             result = await client(functions.phone.GetGroupParticipantsRequest(
                 call=voice_chat,
                 ids=[],
@@ -80,9 +80,15 @@ async def status(event):
         await event.respond('No active voice chat found.')
 
 async def main():
-    await client.start()
-    print("Userbot running... Monitoring voice chat for channels")
-    await ban_channels_in_voicechat()
+    try:
+        await client.start()
+        print("Userbot started successfully!")
+        print("Monitoring voice chat for channels...")
+        await ban_channels_in_voicechat()
+    except Exception as e:
+        print(f"Failed to start: {e}")
+        # If session is invalid, you'll need to create a new one
+        print("The session string might be invalid. Please generate a new one.")
 
 if __name__ == '__main__':
     asyncio.run(main())
